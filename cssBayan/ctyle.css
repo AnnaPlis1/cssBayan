@@ -1,0 +1,207 @@
+
+body{
+    font-family: 'Tilt Warp', cursive;
+    color:blue;
+}
+.container{
+    width: 72vh;
+    margin: 10vh auto 30vh auto;
+}
+.img-content{
+    max-width: 72vh;
+    cursor: pointer;
+}
+.tittle{
+    cursor: pointer;
+    font-size: 4vh;
+    width: 64vh;
+    padding-bottom: 4vh;
+    border-bottom: 1px cadetblue solid;
+    transition: background 0.2s;
+}
+.tittle:hover {
+    color: rgb(2, 2, 2);
+  }
+.accordion input:checked ~ .tittle {
+    border-color: #eeeeee00;
+    color:rgb(2, 2, 2);
+    cursor: pointer;
+  }
+.accordion label{
+    cursor: pointer;
+    padding: 1vh 4vh;
+    z-index: 20;
+    display: block;
+    height: 6vh;
+    color: #7e2727;
+    cursor: pointer;
+}
+.accordion label:hover{
+    background: #fff;
+}
+.accordion input {
+    display: none;
+    visibility: hidden;
+}
+.content {
+    display: none;
+}
+.accordion input:checked ~ .content {
+    display: block;
+    transition: 2s;
+}
+.accordion label:checked ~ .content {
+    display: block;
+    transition: 2s;
+
+}
+
+.accordion input:checked ~ .flex {
+    color:rgb(2, 2, 2);
+    border-color: #eeeeee00;
+    transition: 2s;
+    
+}
+.accordion input:checked ~ .flex icon-img {
+        transform: rotate(40deg);
+      }
+.accordion input:checked ~ .tittle {
+    color:rgb(2, 2, 2);
+    border-color: #eeeeee00;
+    transition: 2s;
+}
+.accordion input:checked ~ .flex {
+    color: rgb(2, 2, 2);
+    border-color: #eeeeee00;
+    transition: 2s;
+}
+.icon-img {
+    max-width: 3vh;
+    transform: rotate(45deg);
+}
+.icon {
+    width: 5vh;
+    align-self: flex-start;
+    padding-top: 1vh;
+    padding-left: 4vh;
+}
+.tittle:hover ~ .icon-img {     
+    opacity: 1.0;
+    transition: 1s;}
+.flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 320px) {
+    body{
+        font-family: 'Tilt Warp', cursive;
+        color:blue;
+    }
+    .container{
+        width: 48vh;
+        margin: 10vh auto 30vh auto;
+    }
+    .img-content{
+        max-width: 41vh;
+    }
+    .tittle{
+        font-size: 4vh;
+        width: 64vh;
+        padding-bottom: 2vh;
+        border-bottom: 1px cadetblue solid;
+        transition: background 0.2s;
+    }
+    .tittle:hover {
+        color: rgb(2, 2, 2);
+      }
+      .tittle:active {
+        color: rgb(2, 2, 2);
+      }
+    .accordion input:checked ~ .tittle {
+        border-color: #eeeeee00;
+        color:rgb(2, 2, 2);
+      }
+    .accordion label{
+        padding: 1vh 4vh;
+        z-index: 20;
+        display: block;
+        height: 6vh;
+        color: #7e2727;
+    }
+    .accordion label:hover{
+        background: #fff;
+    }
+    .accordion input {
+        display: none;
+        visibility: hidden;
+    }
+    .content {
+        display: none;
+    }
+    .accordion input:checked ~ .content {
+        display: block;
+        transition: 2s;
+    }
+    .accordion label:checked ~ .content {
+        display: block;
+        transition: 2s;
+    }
+    .accordion input:checked ~ .flex {
+        color:rgb(2, 2, 2);
+        border-color: #eeeeee00;
+        transition: 2s;
+    }
+    .accordion input:checked ~ .flex icon-img {
+            transform: rotate(40deg);
+          }
+    .accordion input:checked ~ .tittle {
+        color:rgb(2, 2, 2);
+        border-color: #eeeeee00;
+        transition: 2s;
+    }
+    .accordion input:checked ~ .flex {
+        color: rgb(2, 2, 2);
+        border-color: #eeeeee00;
+        transition: 2s;
+    }
+    .icon-img {
+        max-width: 1vh;
+        transform: rotate(45deg);
+    }
+    .icon {
+        width: 5vh;
+        align-self: flex-start;
+        padding-top: 0vh;
+        padding-left: 4vh;
+    }
+    .tittle:hover ~ .icon-img {     
+        opacity: 1.0;
+        transition: 1s;}
+    .flex{
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+  }
+
+  @media (max-width: 820px) {
+    .container{
+        width: 49vh;
+        margin: 10vh auto 30vh auto;
+    }
+    .img-content{
+        max-width: 43vh;
+    }
+    .tittle{
+        font-size: 4vh;
+        width: 64vh;
+        padding-bottom: 2vh;
+        border-bottom: 1px cadetblue solid;
+        transition: background 0.2s;
+    }
+    .icon-img {
+        max-width: 2vh;
+    }
+  }
